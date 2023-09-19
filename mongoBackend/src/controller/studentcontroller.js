@@ -1,11 +1,11 @@
-const dummy = require("../../../db/db.json");
+const studentData = require("../../db/db.json");
 
 const dues = require("../model/Dues");
 
 const payment = require("../model/payments");
 
 const getstudent = async (req, res) => {
-  res.send(dummy);
+  res.send(studentData);
 };
 
 const getdefaultstudent = async (req, res) => {

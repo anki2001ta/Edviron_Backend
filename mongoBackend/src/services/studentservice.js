@@ -1,4 +1,4 @@
-const students = require("../../../db/db.json");
+const students = require("../../db/db.json");
 
 const findstudent = async (name) => {
   let id;
