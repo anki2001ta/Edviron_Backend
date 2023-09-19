@@ -1,0 +1,117 @@
+{
+  "students": [
+    {
+      "_id": "64187a84829739ace6deb0b9",
+
+      "name": "sudhanshu uniyal",
+      "phone_number": ["7988476924"],
+      "edviron_id": 1,
+      "school_generated_id": "1343",
+      "school_id": {
+        "$oid": "641169a585c0b24e1f98cf00"
+      },
+      "class": "11",
+      "section": "A",
+      "category": "general",
+      "dob": {
+        "$date": "2001-03-24T18:30:00.000Z"
+      },
+      "gender": "male",
+      "previous_session_dues": 0,
+      "__v": 0
+    },
+    {
+      "_id": "64187ace829739ace6deb0c7",
+
+      "name": "Aman",
+      "phone_number": ["7988476925"],
+      "edviron_id": 3,
+      "school_generated_id": "13437",
+      "school_id": {
+        "$oid": "641169a585c0b24e1f98cf00"
+      },
+      "class": "11",
+      "section": "A",
+      "category": "general",
+      "dob": {
+        "$date": "2001-03-24T18:30:00.000Z"
+      },
+      "gender": "male",
+      "previous_session_dues": 0,
+      "__v": 0
+    },
+    {
+      "_id": "642548c555dbd12b381d5ead",
+
+      "name": "dsfk",
+      "phone_number": ["fkd"],
+      "edviron_id": 33,
+      "school_generated_id": "fsm",
+      "school_id": {
+        "$oid": "6419d59093938391529c4b9e"
+      },
+      "class": "Nursery",
+      "section": "A",
+      "category": "general",
+      "dob": {
+        "$date": "2000-04-08T00:00:00.000Z"
+      },
+      "gender": "male",
+      "previous_session_dues": 0,
+      "__v": 0,
+      "updatedAt": {
+        "$date": "2023-04-05T06:44:41.053Z"
+      }
+    },
+    {
+      "_id": "6425491e55dbd12b381d5eba",
+
+      "name": "fsdrrrr",
+      "phone_number": ["344rwer"],
+      "edviron_id": 34,
+      "school_generated_id": "fdsrrr",
+      "school_id": {
+        "$oid": "6419d59093938391529c4b9e"
+      },
+      "class": "Nursery",
+      "section": "A",
+      "category": "general",
+      "dob": {
+        "$date": "2023-03-25T00:00:00.000Z"
+      },
+      "gender": "male",
+      "previous_session_dues": 0,
+      "__v": 0,
+      "updatedAt": {
+        "$date": "2023-04-05T06:44:41.053Z"
+      }
+    },
+    {
+      "_id": "6451148b468fcd152c504235",
+
+      "name": "Nancy Kansal",
+      "phone_number": ["7895120540"],
+      "edviron_id": 96,
+      "school_generated_id": "JDP1238",
+      "school_id": {
+        "$oid": "6419d59093938391529c4b9e"
+      },
+      "class": "1",
+      "section": "A",
+      "category": "general",
+      "dob": {
+        "$date": "2001-11-10T18:30:00.000Z"
+      },
+      "gender": "female",
+      "father_name": "",
+      "previous_session_dues": 0,
+      "createdAt": {
+        "$date": "2023-05-02T13:47:55.671Z"
+      },
+      "updatedAt": {
+        "$date": "2023-05-02T13:47:55.671Z"
+      },
+      "__v": 0
+    }
+  ]
+}
