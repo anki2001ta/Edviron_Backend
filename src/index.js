@@ -14,7 +14,7 @@ const app = require("./app");
 //   });
 
 mongoose
-  .connect("mongodb://0.0.0.0:27017", {
+  .connect("mongodb+srv://user:edviron@cluster0.eotptoz.mongodb.net/", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
