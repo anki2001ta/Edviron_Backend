@@ -14,7 +14,7 @@ env.config();
 //   });
 // console.log(process.env.mongoose_url)
 mongoose
-  .connect("mongodb+srv://user:edviron@cluster0.eotptoz.mongodb.net/", {
+  .connect("mongodb+srv://user:<password>@cluster0.eotptoz.mongodb.net/edviron?retryWrites=true&w=majority", {
    
     useNewUrlParser: true,
     useUnifiedTopology: true,
