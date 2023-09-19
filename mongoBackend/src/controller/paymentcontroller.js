@@ -9,7 +9,7 @@ const updatepayment = async (req, res) => {
 
   const transaction = await transactions.findById(transactionid);
 
-  if(transaction.status!="paid"){
+  if(transaction.status!="SUCCESS"){
      res.status(200).json({message: "transaction failes"});
   }
 
@@ -46,7 +46,7 @@ function findDueDate(targetDate, dates) {
   var currentDate = new Date(targetDate);
   //   console.log(currentDate.toDateString()); // added parentheses to call the function
   const year = currentDate.getFullYear(); // removed getUTCFullYear()
-  const month = currentDate.getMonth() + 1;
+  const month = currentDate.getMonth() + 2;
 
   console.log(year, month);
 

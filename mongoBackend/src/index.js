@@ -14,7 +14,7 @@ env.config();
 //   });
 // console.log(process.env.mongoose_url)
 mongoose
-  .connect(process.env.mongoose_url, {
+  .connect("mongodb+srv://user:edviron@cluster0.eotptoz.mongodb.net/", {
    
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -23,6 +23,6 @@ mongoose
     console.log("connected to mongodb");
   });
 
-app.listen(process.env.port, () => {
+app.listen(8000, () => {
   console.log("listening on 8000");
 });
