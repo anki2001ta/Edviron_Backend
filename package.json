@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "node index.js",
+    "start":" npm src/index.js",
     "test": "npm src/index.js",
     "dev": "nodemon src/index.js",
     "deploy": "serverless deploy"
