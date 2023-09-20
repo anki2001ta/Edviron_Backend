@@ -174,10 +174,10 @@ const gettransactions = async (req, res) => {
       for (let i = 0; i < 4; i++) {
         data.push(formattedData[i]);
       }
-      res.send(data);
+      res.json(data);
     }
 
-    res.send(formattedData);
+    res.json(formattedData);
   } catch (erro) {
     res.status(500).json({ message: "error while fetching data" });
   }
