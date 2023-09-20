@@ -14,27 +14,27 @@ const{dataconnection}=require("./Config/config")
 //     console.log("connected to mongodb");
 //   });
 // console.log(process.env.mongoose_url)
-// mongoose
-//   .connect("mongodb+srv://user:edviron@cluster0.eotptoz.mongodb.net/edviron?retryWrites=true&w=majority", {
+mongoose
+  .connect(process.env.moongoseAtlasurl, {
    
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//   })
-//   .then(() => {
-//     console.log("connected to mongodb");
-//   });
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => {
+    console.log("connected to mongodb");
+  });
 
 // app.listen(8000, () => {
 //   console.log("listening on 8000");
 // });
 
 app.listen(process.env.port,async()=>{
-  try{
-      await dataconnection
-  }
-  catch(err){
-      console.log(err)
-      console.log("Database connection Failed")
-  }
+  // try{
+  //     await dataconnection
+  // }
+  // catch(err){
+  //     console.log(err)
+  //     console.log("Database connection Failed")
+  // }
   console.log(`Running on port ${process.env.port}`)
 })

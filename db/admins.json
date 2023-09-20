@@ -1,0 +1,80 @@
+{
+  "admins": [
+    {
+      "_id": {
+        "$oid": "644f53a7e7dfe78dfe185723"
+      },
+      "name": "Prashant Kumar",
+      "phone_number": "7988476921",
+      "email_id": "uniyalsudhanshu10@gmail.com",
+      "role": "Super Admin",
+      "school_id": {
+        "$oid": "644f53a7e7dfe78dfe185721"
+      },
+      "createdAt": {
+        "$date": "2023-05-01T05:52:39.508Z"
+      },
+      "updatedAt": {
+        "$date": "2023-05-01T05:52:39.508Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "644f53a7e7dfe78dfe185723"
+      },
+      "name": "Jasraj Singh Bhatia",
+      "phone_number": "7988476921",
+      "email_id": "uniyalsudhanshu10@gmail.com",
+      "role": "Admin",
+      "school_id": {
+        "$oid": "644f53a7e7dfe78dfe185721"
+      },
+      "createdAt": {
+        "$date": "2023-05-01T05:52:39.508Z"
+      },
+      "updatedAt": {
+        "$date": "2023-05-01T05:52:39.508Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "644f53a7e7dfe78dfe185723"
+      },
+      "name": "Tarun Kheria",
+      "phone_number": "7988476921",
+      "email_id": "uniyalsudhanshu10@gmail.com",
+      "role": "Admin",
+      "school_id": {
+        "$oid": "644f53a7e7dfe78dfe185721"
+      },
+      "createdAt": {
+        "$date": "2023-05-01T05:52:39.508Z"
+      },
+      "updatedAt": {
+        "$date": "2023-05-01T05:52:39.508Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "644f53a7e7dfe78dfe185723"
+      },
+      "name": "Aditya Mullay",
+      "phone_number": "7988476921",
+      "email_id": "uniyalsudhanshu10@gmail.com",
+      "role": "Management Staff",
+      "school_id": {
+        "$oid": "644f53a7e7dfe78dfe185721"
+      },
+      "createdAt": {
+        "$date": "2023-05-01T05:52:39.508Z"
+      },
+      "updatedAt": {
+        "$date": "2023-05-01T05:52:39.508Z"
+      },
+      "__v": 0
+    }
+  ]
+}

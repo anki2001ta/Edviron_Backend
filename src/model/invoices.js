@@ -14,10 +14,15 @@ const invoiceSchema = new mongoose.Schema(
         ref: "payments",
       },
     ],
-    student:{
+    student: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "student"
+      ref: "student",
     },
+    school: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "school",
+    },
+
     fine_days: {
       type: Number,
       default: 0, // Example default value
@@ -26,6 +31,17 @@ const invoiceSchema = new mongoose.Schema(
       type: Number,
       default: 0, // Example default value
     },
+    timestamp:{
+      type: Date,
+      require: true
+    },
+    fee_breakup: {
+      type: mongoose.Schema.Types.Mixed,
+      required: true, // You can make it required if fee_breakup is mandatory
+    },
+    fee_total:{
+       type: Number
+    }
   },
   {
     timestamps: true,
