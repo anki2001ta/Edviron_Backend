@@ -23,12 +23,11 @@ Technologies used in the project:
 ## 💻 Glimpses
 
 **MongoDB:**
-![Screenshot (533)](https://github.com/anki2001ta/Edviron-Frontend/assets/107462155/42812158-bc0b-4483-a16b-daef8d6de6cd)
+![Screenshot (540)](https://github.com/anki2001ta/Edviron_Backend/assets/107462155/1c22b0cd-f63b-4a9d-9758-621cd2de3ff1)
+
 
 **LAMBDA**
-![WhatsApp Image 2023-09-20 at 11 34 45 AM](https://github.com/anki2001ta/Edviron-Frontend/assets/107462155/cf249b5f-cd57-4a7e-9a2b-4350d748fff9)
-
-
+![Screenshot (539)](https://github.com/anki2001ta/Edviron_Backend/assets/107462155/1819ddb7-b0a3-4883-a417-dff8cda0b777)
 
 
 
