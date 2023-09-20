@@ -120,7 +120,7 @@ const collectionInmonths = async (req, res) => {
         return acc + Transaction.amount;
       }, 0);
 
-      const monthName = firstDayOfMonth.toLocaleString('default', { month: 'long' });
+      const monthName = firstDayOfMonth.toLocaleString('default', { month: 'short' });
 
       console.log(monthName);
 
