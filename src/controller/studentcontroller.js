@@ -89,6 +89,7 @@ const getdefaultstudent = async (req, res) => {
   console.log(matchingDueDate);
 };
 
+// get sdefaulter by schoolid
 const getdefaulterBySchoolId = async (req, res) => {
   const schoolid = req.query.schoolid;
   console.log(schoolid);
