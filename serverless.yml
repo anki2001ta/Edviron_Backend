@@ -7,8 +7,8 @@ provider:
   region: us-east-1
 
 environment:
-  moongoseAtlasurl: mongodb+srv://assignment:edviron@cluster1.focovdw.mongodb.net/
-  port: 8000
+moongoseAtlasurl: mongodb+srv://user:edviron@cluster0.eotptoz.mongodb.net/?retryWrites=true&w=majority
+port: 8000
 
 functions:
   app:

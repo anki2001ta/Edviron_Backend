@@ -3,10 +3,17 @@ const sls = require("serverless-http");
 const app = express();
 // const student = require("./src/controller/studentcontroller");
 
-const dues = require("./src/model/Dues");
-const payment = require("./src/model/payments");
+const studentData = require("../../db/db.json");
 
-app.post("/getdefaulter", async (req, res, next) => {
+const dues = require("./src/model/Dues");
+const fee_head = require("./src/model/feehead");
+const payment = require("./src/model/payments");
+const mongoose = require("mongoose");
+const ObjectId = mongoose.Types.ObjectId;
+
+const studentservice = require("./src/services/studentservice");
+
+app.post("/getdefaulter", async (req, res) => {
   const Class= req.body.class;
   const section= req.body.section;
 
@@ -75,10 +82,19 @@ app.post("/getdefaulter", async (req, res, next) => {
   }
 
   console.log(matchingDueDate);
-});
+}
 
-// get defaulters by school_id
-app.get("/getdefaulterbyid" )= async (req, res) => {
+
+   
+
+  
+  
+  // console.log(matchingDueDate);
+
+  // res.status(200).send("Hello World!");
+);
+app.get('/getdefaulterbyid', async (req,res)=>{
+
   const schoolid = req.query.schoolid;
   console.log(schoolid);
   let count = 0;
@@ -141,6 +157,8 @@ app.get("/getdefaulterbyid" )= async (req, res) => {
   } catch (error) {
     console.log(error);
   }
-};
+
+   
+})
 
 module.exports.handler = sls(app);
