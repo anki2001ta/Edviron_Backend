@@ -7,6 +7,7 @@ const mongoose = require("mongoose");
 const ObjectId = mongoose.Types.ObjectId;
 
 const studentservice = require("../services/studentservice");
+const { request } = require("../app");
 
 const getstudent = async (req, res) => {
   res.send(studentData);
@@ -17,6 +18,10 @@ const getaAdmins = async (req, res) => {
 };
 
 const getdefaultstudent = async (req, res) => {
+
+  const Class= req.body.class;
+  const section= req.body.section;
+
   let count = 0;
   const classSectionResults = {};
   const currentDate = new Date();
@@ -76,7 +81,7 @@ const getdefaultstudent = async (req, res) => {
       }
     }
 
-    res.json(classSectionResults);
+    res.json(classSectionResults[Class][section]);
   } catch (error) {
     console.log(error);
   }
@@ -127,7 +132,7 @@ const getdefaulterBySchoolId = async (req, res) => {
         const school = await studentservice.findschoolid(finalid);
         console.log(school);
         const finalschoolid = school["$oid"];
-        // console.log(c, "c");
+        console.log(c, "c");
 
         if (schoolid !== finalschoolid) {
           return res.status(200).json({ message: "schoolid not found" });

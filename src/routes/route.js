@@ -19,7 +19,7 @@ router.post("/createTransaction", transactionpercentage.createtransaction);
 router.get('/gettransaction', transactionpercentage.gettransactions);
 
 router.post("/updatepayment", payments.updatepayment);
- router.get('/getdefaulter', students.getdefaultstudent);
+ router.post('/getdefaulter', students.getdefaultstudent);
  router.get("/getfineamount", payments.getfineamount);
  router.get('/getdefaulterbyid', students.getdefaulterBySchoolId);
 module.exports = router;
