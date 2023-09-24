@@ -22,4 +22,15 @@ const findnameofstudent= async (id) =>{
 
    return name;
 }
-module.exports= {findstudent, findnameofstudent};
+
+const findschoolid= async(id)=>{
+  let schoolid;
+  students.students.map((item)=>{
+    if(item._id==id)
+    {
+      schoolid=item.school_id;
+    }
+  })
+  return schoolid;
+}
+module.exports= {findstudent, findnameofstudent,findschoolid};

@@ -35,10 +35,10 @@ const invoiceSchema = new mongoose.Schema(
       type: Date,
       require: true
     },
-    fee_breakup: {
-      type: mongoose.Schema.Types.Mixed,
-      required: true, // You can make it required if fee_breakup is mandatory
-    },
+    // fee_breakup: {
+    //   type: mongoose.Schema.Types.Mixed,
+    //   // required: true, // You can make it required if fee_breakup is mandatory
+    // },
     fee_total:{
        type: Number
     }

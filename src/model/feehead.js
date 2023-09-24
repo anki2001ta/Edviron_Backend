@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const feehead = new mongoose.Schema({
-  frquency_months: {
+  frequency_months: {
     type: Number,
     require: true,
   },
@@ -10,6 +10,13 @@ const feehead = new mongoose.Schema({
   },
   amount: {
     type: String,
+  },
+  class:{
+    type: Number,
+    require: true
+  },
+  section:{
+   type:String
   },
   start_date: {
     type: Date,
