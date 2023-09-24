@@ -3,7 +3,7 @@ const sls = require("serverless-http");
 const app = express();
 // const student = require("./src/controller/studentcontroller");
 
-const studentData = require("../../db/db.json");
+const studentData = require("./db/db.json");
 
 const dues = require("./src/model/Dues");
 const fee_head = require("./src/model/feehead");

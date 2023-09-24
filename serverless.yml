@@ -5,16 +5,20 @@ provider:
   runtime: nodejs18.x
   stage: dev
   region: us-east-1
-
-environment:
-moongoseAtlasurl: mongodb+srv://user:edviron@cluster0.eotptoz.mongodb.net/?retryWrites=true&w=majority
-port: 8000
-
+  environment:
+       moongoseAtlasurl: mongodb+srv://user:edviron@cluster0.eotptoz.mongodb.net/?retryWrites=true&w=majority
+       port: 8000
+ 
+  
 functions:
   app:
-    handler: lambda.handler
+    handler: lamda.handler
     events:
       - http:
           path: /
-          method: GET
+          method: ANY
+          cors: true
+      - http:
+          path: /{proxy+}
+          method: ANY
           cors: true
